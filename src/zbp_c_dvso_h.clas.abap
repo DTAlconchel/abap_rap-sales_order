@@ -1,0 +1,15 @@
+class ZBP_C_DVSO_H definition
+  public
+  abstract
+  final
+  for behavior of ZC_DVSO_H .
+
+public section.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_C_DVSO_H IMPLEMENTATION.
+ENDCLASS.
