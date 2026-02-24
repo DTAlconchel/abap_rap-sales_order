@@ -1,6 +1,6 @@
 # ABAP RAP Sales Order App (Managed Draft, Actions, Validations, Determinations, KPI Criticality + Donut)
 
-Demo app built with **SAP ABAP RAP (Managed with Draft)** and exposed via **OData V4** for **Fiori elements**.
+App built with **SAP ABAP RAP (Managed with Draft)** and exposed via **OData V4** for **Fiori elements**.
 It manages a **Sales Order** business object with **Header (root)** and **Items (composition child)**, including:
 
 - Managed draft lifecycle ✍️
@@ -13,6 +13,10 @@ It manages a **Sales Order** business object with **Header (root)** and **Items 
 > Backend is stored using the standard **abapGit** format (`/src` + `.abapgit.xml`), so it’s easy to import/export and browse directly in GitHub.
 
 ---
+
+## 🎥 Demo video
+
+...
 
 ## What this app covers
 
@@ -45,7 +49,7 @@ Highlights:
 - ETag + locks: [`etag master` + `lock master`](src/zr_dvso_h.bdef.asbdef#L10-L11)
 - Composition to items (draft-enabled): [`association _Items { create; with draft; }`](src/zr_dvso_h.bdef.asbdef#L36-L37)
 - Draft actions: [`Activate/Discard/Edit/Resume`](src/zr_dvso_h.bdef.asbdef#L55-L57)
-- Draft Prepare orchestrating validations (incl. item validation): [`Prepare { validation Item~validateItemsSum; ... }`](src/zr_dvso_h.bdef.asbdef#L58-L64)
+- Draft Prepare orchestrating validations: [`Prepare { validation Item~validateItemsSum; etc }`](src/zr_dvso_h.bdef.asbdef#L58-L64)
 
 Projection behavior (exposes actions to the UI):
 - [`ZC_DVSO_H.bdef`](src/zc_dvso_h.bdef.asbdef#L1-L51)
@@ -179,7 +183,7 @@ Service binding (artifact):
 ## Repository structure
 - `src/` ABAP objects serialized by abapGit
 - `.abapgit.xml` repository descriptor
-- `docs/` (recommended) screenshots + demo video
+- `docs/`  screenshots + demo video `TO DO`
 
 ---
 
@@ -196,7 +200,6 @@ Service binding (artifact):
 
 ---
 
-## Suggested GitHub Topics
 `abap` · `rap` · `abap-cloud` · `fiori-elements` · `odata-v4` · `cds` · `managed-draft`
 
 ---
