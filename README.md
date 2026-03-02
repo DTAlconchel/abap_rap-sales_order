@@ -16,7 +16,7 @@ It manages a **Sales Order** business object with **Header (root)** and **Items 
 
 ## 🎥 Demo video
 
-...
+https://github.com/user-attachments/assets/fc8fc7d2-3fbe-423b-9ffe-c5d81b054f0e
 
 ## What this app covers
 
